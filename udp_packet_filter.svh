@@ -49,10 +49,6 @@ localparam UDP_DEST_PORT_L_OFFSET = 37;
 localparam ETHERTYPE_IPV4 = 16'h0800;
 localparam IP_PROTOCOL_UDP = 8'h11;
 
-
-
-
-
 always_ff @(posedge clk) begin
     if(rst) begin
         byte_counter <= '0;
